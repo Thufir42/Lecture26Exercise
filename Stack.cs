@@ -20,7 +20,7 @@ namespace Lecture26Exercise
         public object Pop()
         {
             if (_stackList.Count < 1)
-                throw new InvalidOperationException("List is empty");
+                throw new InvalidOperationException("Can not remove from an empty list");
 
             var _topitem = _stackList[_stackList.Count - 1];
             _stackList.RemoveAt(_stackList.Count - 1);

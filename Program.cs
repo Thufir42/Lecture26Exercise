@@ -52,9 +52,9 @@ namespace Lecture26Exercise
                     Console.ReadLine();
                 }
             }
-            catch(InvalidOperationException)
+            catch(InvalidOperationException message)
             {
-                Console.WriteLine("InvalidOperationException Error received.");
+                Console.WriteLine("Invalid Operation Exception Error received: \n\t" + message.Message);
             }
 
         }
